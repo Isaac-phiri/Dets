@@ -1,5 +1,5 @@
 from django.shortcuts import render, redirect
-from forms import UserCreattionForm
+from .forms import UserCreattionForm
 
 
 def create_user(request):
@@ -10,4 +10,4 @@ def create_user(request):
             return redirect('login')
     else:
         form = UserCreattionForm()
-    return render(request, 'register.html', {'form': form})  
+    return render(request, 'registration/register.html', {'form': form})  

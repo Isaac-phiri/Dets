@@ -8,7 +8,8 @@ class User(AbstractBaseUser, PermissionsMixin):
     
     USER_TYPE = (
         ('Admin', 'Admin'),
-        ('User', 'User'),
+        ('Customer', 'Customer'),
+        ('Staff', 'Staff')
     )
     
     user_type = models.CharField(max_length=20, choices=USER_TYPE)
@@ -30,4 +31,3 @@ class User(AbstractBaseUser, PermissionsMixin):
     
     def __str__(self):
         return f"{self.first_name} {self.last_name}"
-    
