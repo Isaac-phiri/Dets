@@ -9,6 +9,9 @@ urlpatterns = [
     path('account/', include('django.contrib.auth.urls')),
     
     path('events/', include('events.urls')),
+    path('opera/', include('opera.urls')),
+    path('tickets/', include('tickets.urls')),
+
     
 
 ]
