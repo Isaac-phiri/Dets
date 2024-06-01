@@ -10,6 +10,11 @@ urlpatterns = [
     
     path('events/', include('events.urls')),
     path('opera/', include('opera.urls')),
+<<<<<<< HEAD
+=======
+    path('tickets/', include('tickets.urls')),
+
+>>>>>>> 6410340c128350e2f5d2d9a06383fc927e6a8814
     
 
 ]

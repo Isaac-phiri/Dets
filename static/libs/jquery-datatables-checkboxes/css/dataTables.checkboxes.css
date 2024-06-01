@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 table.dataTable.dt-checkboxes-select tbody tr,
 table.dataTable thead th.dt-checkboxes-select-all,
 table.dataTable tbody td.dt-checkboxes-cell {
@@ -21,3 +22,28 @@ div.dataTables_wrapper span.select-item {
     display: block;
   }
 }
+=======
+table.dataTable.dt-checkboxes-select tbody tr,
+table.dataTable thead th.dt-checkboxes-select-all,
+table.dataTable tbody td.dt-checkboxes-cell {
+  cursor: pointer;
+}
+
+table.dataTable thead th.dt-checkboxes-select-all,
+table.dataTable tbody td.dt-checkboxes-cell {
+  text-align: center;
+}
+
+div.dataTables_wrapper span.select-info,
+div.dataTables_wrapper span.select-item {
+  margin-left: 0.5em;
+}
+
+@media screen and (max-width: 640px) {
+  div.dataTables_wrapper span.select-info,
+  div.dataTables_wrapper span.select-item {
+    margin-left: 0;
+    display: block;
+  }
+}
+>>>>>>> 6410340c128350e2f5d2d9a06383fc927e6a8814

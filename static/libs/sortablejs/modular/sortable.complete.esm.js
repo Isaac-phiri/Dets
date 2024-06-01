@@ -1097,11 +1097,19 @@ supportDraggable = documentExists && !ChromeForAndroid && !IOS && 'draggable' in
   return dragElS1Opp === targetS1Opp || dragElS2Opp === targetS2Opp || dragElS1Opp + dragElOppLength / 2 === targetS1Opp + targetOppLength / 2;
 },
 
+<<<<<<< HEAD
 /**
  * Detects first nearest empty sortable to X and Y position using emptyInsertThreshold.
  * @param  {Number} x      X position
  * @param  {Number} y      Y position
  * @return {HTMLElement}   Element of the first found nearest Sortable
+=======
+/**
+ * Detects first nearest empty sortable to X and Y position using emptyInsertThreshold.
+ * @param  {Number} x      X position
+ * @param  {Number} y      Y position
+ * @return {HTMLElement}   Element of the first found nearest Sortable
+>>>>>>> 6410340c128350e2f5d2d9a06383fc927e6a8814
  */
 _detectNearestEmptySortable = function _detectNearestEmptySortable(x, y) {
   var ret;
@@ -1209,10 +1217,17 @@ var _checkOutsideTargetEl = function _checkOutsideTargetEl(evt) {
     dragEl.parentNode[expando]._isOutsideThisEl(evt.target);
   }
 };
+<<<<<<< HEAD
 /**
  * @class  Sortable
  * @param  {HTMLElement}  el
  * @param  {Object}       [options]
+=======
+/**
+ * @class  Sortable
+ * @param  {HTMLElement}  el
+ * @param  {Object}       [options]
+>>>>>>> 6410340c128350e2f5d2d9a06383fc927e6a8814
  */
 
 
@@ -2358,9 +2373,15 @@ Sortable.prototype =
     }
   },
 
+<<<<<<< HEAD
   /**
    * Serializes the item into an array of string.
    * @returns {String[]}
+=======
+  /**
+   * Serializes the item into an array of string.
+   * @returns {String[]}
+>>>>>>> 6410340c128350e2f5d2d9a06383fc927e6a8814
    */
   toArray: function toArray() {
     var order = [],
@@ -2381,9 +2402,15 @@ Sortable.prototype =
     return order;
   },
 
+<<<<<<< HEAD
   /**
    * Sorts the elements according to the array.
    * @param  {String[]}  order  order of the items
+=======
+  /**
+   * Sorts the elements according to the array.
+   * @param  {String[]}  order  order of the items
+>>>>>>> 6410340c128350e2f5d2d9a06383fc927e6a8814
    */
   sort: function sort(order, useAnimation) {
     var items = {},
@@ -2405,29 +2432,50 @@ Sortable.prototype =
     useAnimation && this.animateAll();
   },
 
+<<<<<<< HEAD
   /**
    * Save the current sorting
+=======
+  /**
+   * Save the current sorting
+>>>>>>> 6410340c128350e2f5d2d9a06383fc927e6a8814
    */
   save: function save() {
     var store = this.options.store;
     store && store.set && store.set(this);
   },
 
+<<<<<<< HEAD
   /**
    * For each element in the set, get the first element that matches the selector by testing the element itself and traversing up through its ancestors in the DOM tree.
    * @param   {HTMLElement}  el
    * @param   {String}       [selector]  default: `options.draggable`
    * @returns {HTMLElement|null}
+=======
+  /**
+   * For each element in the set, get the first element that matches the selector by testing the element itself and traversing up through its ancestors in the DOM tree.
+   * @param   {HTMLElement}  el
+   * @param   {String}       [selector]  default: `options.draggable`
+   * @returns {HTMLElement|null}
+>>>>>>> 6410340c128350e2f5d2d9a06383fc927e6a8814
    */
   closest: function closest$1(el, selector) {
     return closest(el, selector || this.options.draggable, this.el, false);
   },
 
+<<<<<<< HEAD
   /**
    * Set/get option
    * @param   {string} name
    * @param   {*}      [value]
    * @returns {*}
+=======
+  /**
+   * Set/get option
+   * @param   {string} name
+   * @param   {*}      [value]
+   * @returns {*}
+>>>>>>> 6410340c128350e2f5d2d9a06383fc927e6a8814
    */
   option: function option(name, value) {
     var options = this.options;
@@ -2449,8 +2497,13 @@ Sortable.prototype =
     }
   },
 
+<<<<<<< HEAD
   /**
    * Destroy
+=======
+  /**
+   * Destroy
+>>>>>>> 6410340c128350e2f5d2d9a06383fc927e6a8814
    */
   destroy: function destroy() {
     pluginEvent('destroy', this);
@@ -2627,11 +2680,19 @@ function _getSwapDirection(evt, target, targetRect, vertical, swapThreshold, inv
 
   return 0;
 }
+<<<<<<< HEAD
 /**
  * Gets the direction dragEl must be swapped relative to target in order to make it
  * seem that dragEl has been "inserted" into that element's position
  * @param  {HTMLElement} target       The target whose position dragEl is being inserted at
  * @return {Number}                   Direction dragEl must be swapped
+=======
+/**
+ * Gets the direction dragEl must be swapped relative to target in order to make it
+ * seem that dragEl has been "inserted" into that element's position
+ * @param  {HTMLElement} target       The target whose position dragEl is being inserted at
+ * @return {Number}                   Direction dragEl must be swapped
+>>>>>>> 6410340c128350e2f5d2d9a06383fc927e6a8814
  */
 
 
@@ -2642,11 +2703,19 @@ function _getInsertDirection(target) {
     return -1;
   }
 }
+<<<<<<< HEAD
 /**
  * Generate id
  * @param   {HTMLElement} el
  * @returns {String}
  * @private
+=======
+/**
+ * Generate id
+ * @param   {HTMLElement} el
+ * @returns {String}
+ * @private
+>>>>>>> 6410340c128350e2f5d2d9a06383fc927e6a8814
  */
 
 
@@ -2710,18 +2779,31 @@ Sortable.utils = {
   detectDirection: _detectDirection,
   getChild: getChild
 };
+<<<<<<< HEAD
 /**
  * Get the Sortable instance of an element
  * @param  {HTMLElement} element The element
  * @return {Sortable|undefined}         The instance of Sortable
+=======
+/**
+ * Get the Sortable instance of an element
+ * @param  {HTMLElement} element The element
+ * @return {Sortable|undefined}         The instance of Sortable
+>>>>>>> 6410340c128350e2f5d2d9a06383fc927e6a8814
  */
 
 Sortable.get = function (element) {
   return element[expando];
 };
+<<<<<<< HEAD
 /**
  * Mount a plugin to Sortable
  * @param  {...SortablePlugin|SortablePlugin[]} plugins       Plugins being mounted
+=======
+/**
+ * Mount a plugin to Sortable
+ * @param  {...SortablePlugin|SortablePlugin[]} plugins       Plugins being mounted
+>>>>>>> 6410340c128350e2f5d2d9a06383fc927e6a8814
  */
 
 
@@ -2740,10 +2822,17 @@ Sortable.mount = function () {
     PluginManager.mount(plugin);
   });
 };
+<<<<<<< HEAD
 /**
  * Create sortable instance
  * @param {HTMLElement}  el
  * @param {Object}      [options]
+=======
+/**
+ * Create sortable instance
+ * @param {HTMLElement}  el
+ * @param {Object}      [options]
+>>>>>>> 6410340c128350e2f5d2d9a06383fc927e6a8814
  */
 
 
@@ -3661,9 +3750,15 @@ function MultiDragPlugin() {
     // Static methods & properties
     pluginName: 'multiDrag',
     utils: {
+<<<<<<< HEAD
       /**
        * Selects the provided multi-drag item
        * @param  {HTMLElement} el    The element to be selected
+=======
+      /**
+       * Selects the provided multi-drag item
+       * @param  {HTMLElement} el    The element to be selected
+>>>>>>> 6410340c128350e2f5d2d9a06383fc927e6a8814
        */
       select: function select(el) {
         var sortable = el.parentNode[expando];
@@ -3679,9 +3774,15 @@ function MultiDragPlugin() {
         multiDragElements.push(el);
       },
 
+<<<<<<< HEAD
       /**
        * Deselects the provided multi-drag item
        * @param  {HTMLElement} el    The element to be deselected
+=======
+      /**
+       * Deselects the provided multi-drag item
+       * @param  {HTMLElement} el    The element to be deselected
+>>>>>>> 6410340c128350e2f5d2d9a06383fc927e6a8814
        */
       deselect: function deselect(el) {
         var sortable = el.parentNode[expando],
@@ -3751,10 +3852,17 @@ function insertMultiDragElements(clonesInserted, rootEl) {
     }
   });
 }
+<<<<<<< HEAD
 /**
  * Insert multi-drag clones
  * @param  {[Boolean]} elementsInserted  Whether the multi-drag elements are inserted
  * @param  {HTMLElement} rootEl
+=======
+/**
+ * Insert multi-drag clones
+ * @param  {[Boolean]} elementsInserted  Whether the multi-drag elements are inserted
+ * @param  {HTMLElement} rootEl
+>>>>>>> 6410340c128350e2f5d2d9a06383fc927e6a8814
  */
 
 
